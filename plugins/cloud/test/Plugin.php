@@ -28,6 +28,6 @@ class Plugin extends PluginBase
      */
     public function registerSchedule($schedule)
     {
-        $schedule->job(new CreateTick)->everyMinute();
+        $schedule->job(new CreateTick)->everyFiveMinutes();
     }
 }
